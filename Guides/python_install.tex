@@ -1,0 +1,283 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{setspace}
+
+% ---------------- Compact lists ----------------
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
+
+\setstretch{1.1}
+
+\definecolor{codegray}{gray}{0.95}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{codegray},
+  frame=single,
+  breaklines=true,
+  showstringspaces=false
+}
+
+\title{Quick Start Guide: VS Code, Python, and Jupyter}
+\author{Course Computing Setup}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Goal}
+By the end of this guide, you will be able to:
+\begin{itemize}
+  \item Write and run Python code
+  \item Use Jupyter notebooks
+  \item Make plots and analyze data
+\end{itemize}
+
+All work in this course will be done \textbf{inside Visual Studio Code (VS Code)} using a Python environment named \texttt{geo-env}.
+
+\hrule
+\vspace{1em}
+
+\section*{Step 1: Install Visual Studio Code}
+Download and install VS Code from:
+\begin{center}
+\url{https://code.visualstudio.com}
+\end{center}
+
+Use the default installation options.
+
+\textbf{Windows users:}  
+If the installer asks whether to \emph{Add VS Code to PATH}, check that box.
+
+\section*{Step 2: Install Python (Official Version)}
+Install Python from:
+\begin{center}
+\url{https://www.python.org}
+\end{center}
+
+\subsection*{Important for Windows}
+During installation:
+\begin{itemize}
+  \item Check \textbf{``Add Python to PATH''}
+  \item Use default installation options
+\end{itemize}
+
+\subsection*{Verify Installation (Mac and Windows)}
+Open a terminal:
+\begin{itemize}
+  \item Mac: Applications $\rightarrow$ Utilities $\rightarrow$ Terminal
+  \item Windows: Command Prompt or PowerShell
+\end{itemize}
+
+Run:
+\begin{lstlisting}
+python --version
+pip --version
+\end{lstlisting}
+
+If \texttt{python} does not work on Windows, try:
+\begin{lstlisting}
+py --version
+\end{lstlisting}
+
+\section*{Step 3: Install VS Code Extensions}
+Open VS Code, go to the Extensions tab, and install:
+\begin{itemize}
+  \item \textbf{Python} (Microsoft)
+  \item \textbf{Jupyter} (Microsoft)
+\end{itemize}
+
+These allow Python scripts and Jupyter notebooks to run inside VS Code.
+
+\section*{Step 4: Create a Course Folder (Finder / File Explorer)}
+You do \textbf{not} need the terminal for this step.
+
+\subsection*{Mac}
+\begin{enumerate}[leftmargin=*]
+  \item Open \textbf{Finder}
+  \item Click \textbf{Documents}
+  \item Right-click $\rightarrow$ New Folder
+  \item Name the folder:
+\end{enumerate}
+
+\begin{lstlisting}
+earth_history_code
+\end{lstlisting}
+
+\begin{enumerate}[leftmargin=*, resume]
+  \item Open VS Code
+  \item File $\rightarrow$ Open Folder
+  \item Select \path{earth_history_code}
+\end{enumerate}
+
+\subsection*{Windows}
+\begin{enumerate}[leftmargin=*]
+  \item Open \textbf{File Explorer}
+  \item Click \textbf{Documents}
+  \item Right-click $\rightarrow$ New $\rightarrow$ Folder
+  \item Name the folder:
+\end{enumerate}
+
+\begin{lstlisting}
+earth_history_code
+\end{lstlisting}
+
+\begin{enumerate}[leftmargin=*, resume]
+  \item Open VS Code
+  \item File $\rightarrow$ Open Folder
+  \item Select \path{earth_history_code}
+\end{enumerate}
+
+\textbf{Important:}  
+All terminals, environments, scripts, and notebooks must be created inside this folder.
+
+\section*{Step 5: Create the Python Environment (\texttt{geo-env})}
+Open the VS Code terminal:
+\begin{center}
+Terminal $\rightarrow$ New Terminal
+\end{center}
+
+\subsection*{Mac}
+\begin{lstlisting}
+python -m venv geo-env
+source geo-env/bin/activate
+python -m pip install --upgrade pip
+\end{lstlisting}
+
+\subsection*{Windows (PowerShell)}
+\begin{lstlisting}
+python -m venv geo-env
+.\geo-env\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+\end{lstlisting}
+
+If activation fails, run once:
+\begin{lstlisting}
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+\end{lstlisting}
+
+Then try activating again.
+
+\subsection*{Windows (Command Prompt)}
+\begin{lstlisting}
+python -m venv geo-env
+geo-env\Scripts\activate.bat
+python -m pip install --upgrade pip
+\end{lstlisting}
+
+\subsection*{Check That It Worked}
+\begin{lstlisting}
+python --version
+\end{lstlisting}
+
+The Python path should include \texttt{geo-env}.
+
+\section*{Step 6: Install Required Packages}
+Inside the \path{earth_history_code} folder, create a file named:
+
+\begin{lstlisting}
+requirements.txt
+\end{lstlisting}
+
+Paste the following:
+
+\begin{lstlisting}
+numpy
+scipy
+pandas
+matplotlib
+
+jupyter
+ipykernel
+
+xarray
+netcdf4
+h5py
+
+scikit-learn
+
+scikit-image
+pillow
+
+tqdm
+
+ruff
+black
+pytest
+\end{lstlisting}
+
+Install the packages:
+\begin{lstlisting}
+pip install -r requirements.txt
+\end{lstlisting}
+
+\section*{Step 7: Register \texttt{geo-env} as a Jupyter Kernel}
+\begin{lstlisting}
+python -m ipykernel install --user --name geo-env --display-name "Python (geo-env)"
+\end{lstlisting}
+
+\section*{Step 8: Select the Python Interpreter in VS Code}
+\begin{enumerate}[leftmargin=*]
+  \item Press \textbf{Ctrl+Shift+P} (Windows) or \textbf{Cmd+Shift+P} (Mac)
+  \item Run \textbf{Python: Select Interpreter}
+  \item Choose the interpreter inside \texttt{geo-env}
+\end{enumerate}
+
+\section*{Step 9: Test with a Jupyter Notebook}
+Create a new file named:
+\begin{lstlisting}
+test.ipynb
+\end{lstlisting}
+
+In the top-right of the notebook, select:
+\begin{center}
+\texttt{Python (geo-env)}
+\end{center}
+
+Run:
+\begin{lstlisting}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 10, 200)
+plt.plot(x, np.sin(x))
+plt.title("geo-env works")
+plt.show()
+\end{lstlisting}
+
+If you see a plot, your setup is complete.
+
+\section*{Common Issues}
+
+\subsection*{Kernel Not Showing Up}
+\begin{lstlisting}
+python -m pip install ipykernel
+python -m ipykernel install --user --name geo-env --display-name "Python (geo-env)"
+\end{lstlisting}
+Restart VS Code.
+
+\subsection*{VS Code Using the Wrong Python}
+Run \textbf{Python: Select Interpreter} again and choose \texttt{geo-env}.
+
+\subsection*{Permission Errors (Mac)}
+\begin{lstlisting}
+python -m pip install --upgrade pip setuptools wheel
+\end{lstlisting}
+
+\hrule
+\vspace{1em}
+
+\section*{You Are Done}
+If something breaks later:
+\begin{itemize}
+  \item Restart VS Code
+  \item Activate \texttt{geo-env}
+  \item Re-select the interpreter
+\end{itemize}
+
+\end{document}

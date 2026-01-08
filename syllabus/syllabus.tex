@@ -1,179 +1,415 @@
-% Fri Jun 09 10:16:32 EDT 2023
-%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-% SUMMARY   :  Syllabus for COS-### Course Name
-%           :  James Quinlan 
-%           :  Great State University
-%           :  MIT License
-%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\documentclass[11pt,letterpaper]{article}
 
-% DIRECTORIES
-\def\common{./common} % Common to ALL your syllabi (e.g., instructor)
-\def\local{./local}
-\def\assets{./assets}
-
-% SETTINGS
-\input{configs}
-
-
-% DOCUMENT CLASS
-\documentclass[11pt]{handout}
-
-
-% PACKAGES
-\usepackage{geometry, booktabs}
-\usepackage{mathabx, color} % square bullets in itemized list
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{hyperref}
-\usepackage{nopageno}
-\usepackage{multicol}
-\usepackage{tabularx}
-\usepackage{rotating}
-\usepackage{calc}
-\usepackage{enumerate}
-\usepackage{paralist}
-
-% Booktabs for prettier tables
-\usepackage{booktabs}
-% Multirow if you want the "Week" label to span the three rows
-\usepackage{multirow}
-% If you need text wrapping in columns, you can also use array or tabularx
-\usepackage{array}
-\usepackage{tabularx}
-
-% Outline - Enumerated Lists
-\usepackage{outlines}
+% ---------------------------------------------------------
+% Tufte-inspired layout (single column, full width)
+% ---------------------------------------------------------
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{parskip}      % no paragraph indent, space between paragraphs
+\usepackage{titlesec}
 \usepackage{enumitem}
-\setenumerate[1]{label=\arabic*.}
-\setenumerate[2]{label=(\alph*).}
-\setenumerate[3]{label=\roman*.}
-\setenumerate[4]{label= - }
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{helvet}       % sans-serif font
+\usepackage{longtable}    % multi-page tables
+\usepackage{array}        % for column formatting
+\usepackage{hyperref}
 
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=black
+}
 
-% HACK (see hyperlink)
-% https://newbedev.com/how-to-find-this-unicode-character-u-202f-in-your-latex-documents
-\DeclareUnicodeCharacter{202F}{FIX ME!!!!}
+% Section formatting: Tufte-y, left-aligned, sans-serif
+\titleformat{\section}
+  {\large\bfseries\sffamily}
+  {\thesection}{0.7em}{}
+\titleformat{\subsection}
+  {\normalsize\bfseries\sffamily}
+  {\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}
+  {\normalsize\itshape\sffamily}
+  {\thesubsubsection}{0.6em}{}
 
+% Compact lists (if/when you use them)
+\setlist[itemize]{itemsep=0em, topsep=0.25em, parsep=0em, partopsep=0em}
+\setlist[enumerate]{itemsep=0em, topsep=0.25em, parsep=0em, partopsep=0em}
 
-% LAYOUT(S) 
-\geometry{margin=1in,top=0.4in,bottom=0.75in}
-\setlength{\parindent}{0in}
-\setlength{\parskip}{0in}
+% Slightly tighter line spacing
+\onehalfspacing
 
-% Spacing 
-\setlength{\parindent}{0in}
-\setlength{\parskip}{0in}
+% ---------------------------------------------------------
+% Course info (edit these)
+% ---------------------------------------------------------
+\newcommand{\coursename}{Earth History \& Stratigraphy}
+\newcommand{\coursecode}{EES 321}
+\newcommand{\term}{Spring 2026}
+\newcommand{\instructor}{Dr.\ Bolton Howes}
+\newcommand{\email}{\href{mailto:bolton.howes@wheaton.edu}{bolton.howes@wheaton.edu}}
+\newcommand{\office}{Meyer 052}
+\newcommand{\classroom}{Meyer 0630}
+\newcommand{\officehours}{Email me to set up a time}
+\newcommand{\classtimes}{MWF 2:15--3:25\,p.m.}
+\newcommand{\labtime}{T 1:15--3:05\,p.m.}
+\newcommand{\location}{Room ABC}
 
-
-% USER-DEFINED COMMANDS
-\newcommand{\peem}{\textsc{p.m.}}
-\newcommand{\ayem}{\textsc{a.m.}}
-
-
-% STYLE OVERRIDES
-% Puts a blue bullet for list items.  Comment out for standard bullet
-\renewcommand{\labelitemi}{\includegraphics[]{\assets/blue_bullet.png}}
-
-
-% LOGO and HEADER 
-  \title{\includegraphics[scale=1.0]{assets/logo.png}}
-  \input{\common/header}
-
-
-% DOCUMENT
-% ----------------------------------------------------- %
+% ---------------------------------------------------------
+% Document
+% ---------------------------------------------------------
 \begin{document}
-\maketitle
+\begin{center}
+{\Large\bfseries\sffamily \coursename}\\[-0.3em]
+{\large\sffamily \coursecode \,---\, \term}\\[-0.2em]
+\end{center}
+
+\vspace{-0.8em}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\vspace{0.1em}
+
+\begin{minipage}{\textwidth}
+\textbf{Instructor:} \instructor \\
+\textbf{Email:} \email \\
+\textbf{Office:} \office \\
+\textbf{Office Hours:} \officehours \\
+\textbf{Class Times:} \classtimes \\
+\textbf{Lab Time:} \labtime \\
+\end{minipage}
+
+\vspace{-0.6em}
+\rule{\textwidth}{0.4pt}
+\vspace{0.4em}
+
+% ---------------------------------------------------------
+% Brief course description
+% ---------------------------------------------------------
+\section*{Course Description}
+This course explores the 4.6-billion-year history of Earth as recorded in rocks, fossils, and geochemical archives. We will move from the origin of the Solar System and early crustal formation through the rise of oxygen, Snowball Earth, the Cambrian Explosion, Paleozoic and Mesozoic worlds, the Cenozoic cooling trend, and Quaternary ice ages. Throughout, we will emphasize how sedimentary records, stratigraphy, and quantitative tools reveal the co-evolution of Earth's surface, climate, and life.
+
+Sedimentary rocks preserve most of Earth's history. In this course we will examine how sediments are eroded, transported, and deposited; how sedimentary basins form; and how the textures, compositions, and structures within rocks reflect the environments in which they formed. 
+
+Our study of Earth history will be a quantitative one. You will use mathematics and coding to analyze geologic problems, build models, and interpret data. If these tools are new to you, the work may feel challenging—\textit{but that is kind of the point}. Developing quantitative intuition is a central goal of the course.
+
+We study geology, and Earth history in particular, not only because it is cool (which it is), but because understanding the planet:
+\begin{enumerate}
+    \item Deepens our appreciation of God's creation,
+    \item Encourages wise stewardship of the Earth, and
+    \item Equips us to protect and serve people.
+\end{enumerate}
+
+Throughout the semester we will read papers, articles, book chapters, etc. that demonstrate how understanding Earth's History reveals God's character and provides for human flourishing and you will comlete a project that explores how Earth's history informs a field or career that interests you.
+
+% ---------------------------------------------------------
+% Learning goals
+% ---------------------------------------------------------
+\section*{Learning Goals}
+
+By the end of the semester, you should be able to:
+
+\begin{itemize}
+    \item Interpret sedimentary, stratigraphic, and fossil evidence to reconstruct past environments and events.
+    \item Explain major transitions in Earth history (e.g., the Great Oxygenation Event, Snowball Earth, the Cambrian Explosion, and mass extinctions).
+    \item Apply quantitative approaches such as geochemical box models, numerical simulations, and spectral analysis—to investigate Earth system behavior.
+    \item Evaluate modern climate change in the context of long-term Earth history.
+    \item Communicate Earth history concepts clearly using evidence, quantitative results, and geological reasoning.
+\end{itemize}
 
 
-% ----------------------------------------------------- %
-% COURSE INFO
-  \subsection*{Course Information}
-  \vspace{0ex}%
-  \noindent\parbox{0.5\textwidth}{%
-  \noindent\begin{tabular}{@{}ll}
-  \input{\local/courseinfo}
-  \end{tabular}}
-  \vspace{0ex}\hrule\vspace{1ex}
+% ---------------------------------------------------------
+% Policies / grading etc.
+% ---------------------------------------------------------
+\vspace{0.75em}
+\rule{0.9\textwidth}{0.4pt}
+\vspace{0.75em}
+
+\section*{Assessment and Grading}
+
+Your final grade will be based on the following components:
+
+\begin{center}
+\begin{tabular}{@{}l r@{}}
+\toprule
+\textbf{Component} & \textbf{Weight} \\
+\midrule
+Problem Sets & 60\% \\
+Paper Presentations \& Engagement & 10\% \\
+Quizzes & 10\% \\
+Final Project  & 20\% \\
+\midrule
+\textbf{Total} & \textbf{100\%} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+    \item Labs and problem sets are the core of the course: they are where you will practice data analysis, modeling, and interpretation of Earth history records.
+    \item Engagement and presentation of papers: we will read papers throughout the semester, and a student will be picked at random to lead the discussion.
+    \item Project (two parts):
+    \begin{itemize}
+        \item Part I: Proposal.
+        \item Part II: Final Project, written \& presented.
+    \end{itemize}
+\end{itemize}
+
+\section*{Problem Sets}
+
+Problem sets are the core of this course. They will be challenging, and you should expect to spend time wrestling with new concepts, methods, and datasets. There are no exams and very few other graded assignments, so the problem sets are where most of your learning—and your grade—will come from.
+
+Each problem set should include:
+
+\begin{itemize}
+    \item \textbf{A short abstract} (250ish words) that introduces the scientific question, explains why the problem is interesting or important, and provides context for the analysis you carried out.
+    \item \textbf{Complete answers to each question}, supported by clear figures or tables.
+    \item \textbf{Acknowledgements} listing the classmates you collaborated or discussed the assignment with. Collaboration is encouraged; copying is not.
+\end{itemize}
+
+\noindent\textbf{Grading.}  
+Each problem set is worth \textbf{35 points}:
+\begin{itemize}
+    \item \textbf{5 points} for completing the prelab.
+    \item \textbf{20 points} for the correctness and completeness of your answers.
+    \item \textbf{10 points} for communication: clarity of writing, figure quality, organization, and overall presentation.
+\end{itemize}
+
+We will work on these together during the Lab portion of the class. In order to get the most out of the Lab portion you \textit{must} complete the Pre-Lab. I do not expect you to complete the Problem Sets during lab. On the contrary, I suspect it will take you quite a bit of time outside of class/lab. 
+
+You are encouraged to work with others, but the work you submit must be your own. The abstract, explanations, figures, and code should reflect \textit{your} understanding.
+
+Each Lab is due at 5 pm on Monday unless otherwise noted. 
+
+\section*{Project}
+
+The final project is intentionally open-ended. You will choose a direction that aligns with your interests, strengths, or goals for the future. I encourage you to imagine a career or vocation you might want to explore, and use this project as a low-stakes ``test drive.''
+
+Some example directions include:
+
+\begin{itemize}
+    \item \textbf{Policy or public service:} draft a policy proposal or position paper related to climate, hazards, land use, or resource management.
+    \item \textbf{Museum or outreach work:} design a museum exhibit or educational display that communicates a major transition or concept in Earth history.
+    \item \textbf{Scientific research:} write a short research-style paper analyzing a dataset, developing a small model, or synthesizing literature on a well-defined question.
+    \item \textbf{Science communication:} create a podcast episode, video, or interactive story that explains a geological problem to a general audience.
+\end{itemize}
+
+These examples are not exhaustive—you are welcome to propose your own format. The essential requirement is that your project engages meaningfully with a topic from Earth history and demonstrates care, creativity, and scientific reasoning.
+
+\vspace{0.75em}
+
+\subsection*{Project Components}
+
+Your project will include three submitted pieces:
+
+\begin{enumerate}
+    \item \textbf{Project Proposal (1--2 pages):}  
+    A brief document outlining your chosen project, the question or theme you intend to explore, the form it will take, and the evidence or methods you expect to use.
+
+    \item \textbf{Final Presentation (10 minutes):}  
+    During the final lab period, you will give a concise presentation summarizing your project, your approach, your findings or product, and what you learned.
+
+    \item \textbf{Final Written Piece (format depends on project):}  
+    The final deliverable appropriate to your chosen direction (e.g., policy memo, exhibit text and layout, research-style paper, script or materials for a podcast/video, etc.).
+\end{enumerate}
+
+Each component is designed to help you build and communicate a thoughtful, well-developed project.
 
 
-% ----------------------------------------------------- %
-% NSTRUCTOR INFO
-  \subsection*{Instructor Information}
-  \noindent\parbox{0.5\textwidth}{%
-  \noindent\begin{tabular}{@{}ll}
-  \input{\common/instructor.tex}
-  \end{tabular}}
-  \vspace{0ex}\hrule\vspace{1ex}
+\section*{Readings}
 
- 
-% ----------------------------------------------------- %
-% COURSE DESCRIPTION
-  \subsection*{Course description} 
-  \input{\local/description}
-  \vspace{2ex} \hrule\vspace{0ex}
- 
-% ----------------------------------------------------- %
-% LEARNING OUTCOMES
-  \subsection*{And His Kingdom}
-  \input{\local/andhiskingdom}
-  \vspace{2ex}\hrule\vspace{2ex}
+The primary readings will be scientific papers (see below). In addition to the scientific papers, there will be readings that help explain concepts and some that emphasize how Earth's history encourages and informs good stewardship of the Earth and climate. 
 
-% ----------------------------------------------------- %
-% LEARNING OUTCOMES
-  \subsection*{Learning Outcomes}
-  \input{\local/learningoutcomes}
-  \vspace{2ex}\hrule\vspace{2ex}
+\section*{Paper Presentations}
 
- 
-% ----------------------------------------------------- %
-% EQUIPMENT
-% https://sites.udel.edu/computing-purchases/personal-specs/
-  \subsection*{Essential Equipment}
-  \input{\local/equipment}
-  \vspace{2ex}\hrule\vspace{2ex}
+Throughout the semester we will read and discuss scientific papers related to the topics we are covering in class. You are expected to read these papers carefully before class and come prepared to discuss them.
 
-   
-% ----------------------------------------------------- %
-% Grade Evaluation
-  \subsection*{Course Evaluation and Grading Policies} 
-  \input{\local/evaluation.tex}
-  \vspace{2ex}\hrule\vspace{2ex}
+For each paper, one student will serve as the \textbf{presenter}. At the beginning of class, I will randomly select the presenter from the roster. To keep things fair, the random selection will be weighted so that students who have already presented are less likely to be chosen again, but it is still possible to be selected more than once.
 
-% ----------------------------------------------------- %
-% COURSE TOPICS
-%  \subsection*{} 
-\input{\local/topics}
-\vspace{0ex} \hrule\vspace{2ex}
+As the presenter, your job is to:
+\begin{itemize}
+    \item Give a brief overview of the paper (7--10 minutes): the main question, why it matters, and the key results.
+    \item Walk us through a few central figures or tables (I will have the figures loaded in the slide deck).
+    \item Highlight one or two strengths of the study and one or two limitations or open questions.
+\end{itemize}
+
+Even if you are not the presenter on a given day, you are still responsible for having read the paper and being ready to participate in discussion. Your preparation and contributions to these conversations are part of your paper presentation and engagement grade.
 
 
+\section*{Field Trip}
 
-\if\topics1
-{
-  \subsection*{Topic Schedule}
-  \input{\local/schedule}
-  \vspace{2ex}\hrule\vspace{2ex}
-}
-\fi
+We will discuss potential field trip logistics, dates, and expectations early in the semester.
 
+\section*{Attendance}
+You are expected to attend every class and lab. Please communicate if you are going to miss class. I am happy to excuse absences in accordance with Wheaton's absence policy. Any more than 2 unexcused absence will result in a reduction of 2.5\% of your final grade.
 
-% ----------------------------------------------------- %
-\if\importantdates1
-{
-  \subsection*{Important Dates}
-  \input{\common/importantdates}
-  \vspace{2ex}\hrule\vspace{2ex}
-}
-\fi
+\section*{Technology}
+Please bring your computer and charger to class each day. There is a strict no technology policy during lecture, but we may do activities that involve your computer. 
 
 
-% ----------------------------------------------------- %
-\if\policies1
-{
-  \subsection*{Policies, Support Services, and Other Information}
-  \input{\local/policies}
-  \vspace{2ex}\hrule\vspace{2ex}
-}
-\fi
- 
-\end{document} % /END DOCUMENT
+\section*{AI Policy}
+I have conflicting thoughts on the use of AI tools for coursework. I think it is important to learn how to use these tools, but in putting together some assignments for this course I have found that asking AI tools to help with writing code actually leads you down really uhelpful (or flat out wrong) paths. If you did not have an existing intuition for what the code should be doing, you may end up with code that technically works, but is not actually addressing the question. 
+
+So, for the first two problem sets, I am not allowing the use of AI tools. After that, we will revisit the use of AI tools for coding assignments. 
+
+You are not allowed to use AI tools to do any writing. Writing is thinking. You have wonderful minds; let's use them.
+
+
+\section*{Academic Honesty}
+
+Cheating and plagiarism will not be tolerated in this course. The college’s policies on academic integrity are described in the current \textit{Wheaton College Catalog}, with additional guidelines in the \textit{Undergraduate Student Handbook} and \textit{Faculty Handbook}. Unless otherwise stated, all assignments are to be completed independently.
+
+Some projects and activities in this course will involve collaboration or group work; however, the final submitted work must represent your own understanding and effort. If you are unsure whether a particular form of collaboration is appropriate, please ask. Additionally, please include an \emph{Acknowledgements} section at the end of your assignemnts to recognize the folks you collaborated with on the assignment. 
+
+A first occurrence of academic dishonesty will result in a grade of zero for that assignment. A second occurrence will result in being dropped from the course with a grade of ``F.'' All instances of academic dishonesty will be reported to the Student Development Office. Students may be asked to submit written materials to Schoology for plagiarism analysis.
+
+\section*{Inclusive Language}
+Inclusive Language: Please be aware of Wheaton College’s policy on inclusive language, “For academic discourse, spoken and written, the faculty expects students to use gender inclusive language for human beings.”
+
+\section*{Accommodations}
+Wheaton College believes that disability is an indispensable part of the diversity of God’s Kingdom. We work to provide equal access to College programs and activities as well as spaces of belonging for students with disabilities. Students are encouraged to discuss with their professors if they foresee any disability-related barriers in a course. Students who need accommodations in order to fully access this course's content or any part of the learning experience should connect with Learning and Accessibility Services (LAS) as soon as possible to request accommodations  (Student Services Building - Suite 209, las@wheaton.edu, phone 630.752.5615). The accommodations process is dynamic, interactive, and completely free and confidential. Do not hesitate to reach out or ask any questions.
+
+
+\section*{Writing Center}
+The Writing Center is a free resource that equips undergraduate and graduate students across the disciplines to develop effective writing skills and processes. This academic year, the Writing Center is offering in-person consultations in our Center located in the Library, as well as synchronous video consultations online. 
+
+\section*{Confidentiality and Mandatory Reporting}
+
+As instructors, we are responsible for creating a safe learning environment on campus. We also have mandatory reporting responsibilities as faculty members. This means that if you disclose information regarding sexual misconduct or a crime that may have occurred on Wheaton College’s campus, we are required to share that information with the College.
+
+Confidential resources—individuals who are not required to report—include the Counseling Center, Student Health Services, and the Chaplain’s Office. More information about these resources and the College’s policies is available at:
+
+\begin{itemize}
+    \item \href{https://www.wheaton.edu/life-at-wheaton/student-development-offices/}{Wheaton College Student Development Offices}
+    \item \href{https://www.wheaton.edu/life-at-wheaton/student-development-offices/equity-and-title-ix-at-wheaton-college/}{Equity \& Title IX at Wheaton College}
+\end{itemize}
+
+
+\newpage
+
+% ---------------------------------------------------------
+% Weekly Schedule (Revised, Streamlined)
+% ---------------------------------------------------------
+
+\section*{Weekly Schedule (Tentative)}
+
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{p{0.8cm} p{3.8cm} p{7.2cm} p{4.0cm}}
+\toprule
+\textbf{Week} & \textbf{Theme} & \textbf{Lecture Topics} & \textbf{Lab} \\
+\midrule
+1 &
+Earliest Earth &
+Introduction\newline 
+Solar System formation\newline
+Hadean \& Archean crust \& atmosphere\newline &
+Cloud Chamber \\
+\addlinespace[0.3em]
+
+2 &
+Early Earth &
+Archean life\newline 
+Continental plates\newline
+Plate Tectonics\newline  
+Intro to geochemical cycles &
+Age of the Earth and Moon \\
+\addlinespace[0.3em]
+
+3 &
+Rise of Oxygen &
+Photosynthesis\newline  
+GOE causes \& consequences\newline
+Earth-system feedbacks &
+Box Models I \\
+\addlinespace[0.3em]
+
+4 &
+Snowball Earth \&\newline Ediacaran Life &
+Proterozoic tectonics\newline  
+Snowball Earth\newline  
+Eukaryotes \& Ediacaran fauna &
+Albedo \& Energy Balance Models \\
+\addlinespace[0.3em]
+
+5 &
+Cambrian Explosion &
+Cambrian diversification \newline  
+early Paleozoic ecosystems &
+Paleobiology Database \\
+\addlinespace[0.3em]
+
+6 &
+Early Paleozoic &
+Origin of land plants \newline  
+Terrestrial ecosystems \newline  
+Extinctions &
+Rocks \& Fossils \\
+\addlinespace[0.3em]
+
+7 &
+Late Paleozoic &
+Carboniferous forests\newline  
+Late Paleozoic Ice Age \newline
+end-Permian extinction &
+Sedimentary Basins \& Subsidence \\
+\addlinespace[0.3em]
+
+8 &
+Mesozoic World &
+Triassic recovery\newline  
+Rise of Dinosaurs\newline
+Mid-Mesozoic Revolution &
+Age Models \& Monte Carlo Simulations \\
+\addlinespace[0.3em]
+
+9 &
+K--Pg \newline\& Early Cenozoic &
+Impact vs. volcanism\newline
+PETM\newline
+long-term CO$_2$ cooling &
+Box Models II (PETM) \\
+\addlinespace[0.3em]
+
+10 &
+Ice Ages &
+Milankovitch cycles\newline  
+ice-sheet dynamics\newline  
+glacial-interglacial climate &
+Box Models III \newline(Cenozoic Cooling) \\
+\addlinespace[0.3em]
+
+11 &
+Holocene &
+Holocene climate\newline
+megafaunal extinctions\newline
+human evolution \& climate context &
+Glaciers Problem Set \\
+\addlinespace[0.3em]
+
+12 &
+Macroevolution \newline\& Extinction &
+Evolutionary trends\newline  
+mass-extinction patterns\newline  
+post-extinction recovery &
+Project Work Session \\
+\addlinespace[0.3em]
+
+13 &
+Flex Week / Buffer Week &
+TBD &
+Project Workshop \\
+\addlinespace[0.3em]
+
+14 &
+Synthesis &
+Lessons from deep time\newline
+Future climate\newline
+Review &
+\textbf{Final Project Presentations} \\
+\bottomrule
+
+\end{longtable}
+
+\end{document}
