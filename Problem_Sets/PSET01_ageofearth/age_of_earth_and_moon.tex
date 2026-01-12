@@ -1,0 +1,235 @@
+\documentclass[letterpaper]{tufte-handout}
+
+% --- Minimal preamble for a standalone version of this chapter ---
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{paralist} % for compactenum
+
+\graphicspath{{./}{./graphics/}}
+
+% Sensible default for images (you can delete/adjust)
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+% Add common figure folders used in book projects (adjust as needed)
+\graphicspath{{./}{./figures/}{./graphics/}{./images/}{../figures/}{../graphics/}{../images/}}
+
+\title{The Age of the Earth and Moon}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\section{The Age of the Earth and Moon}
+\label{ch:age_of_earth}
+
+\begin{quote}
+It is perhaps a little indelicate to ask of our Mother Earth her age, but Science acknowledges no shame\ldots
+\par\medskip
+\begin{flushright}
+—\textsc{Arthur Holmes}, 1913
+\end{flushright}
+\end{quote}
+
+
+
+
+Despite the discovery of radioactivity in the early 2s0th century [citation] and immediate effort to date Earth materials using radioactive decay [cite], it took more than 50 years until isotope geochemists were able to produce an age for Earth that was close to what we use today. \citet{patterson1956age} is commonly cited as the first correct determination of the age of the earth.
+
+\begin{marginfigure}
+  \includegraphics[width = 3.5in]{clair_patterson.png}
+%  \checkparity This is an \pageparity\ page.%
+  \caption[Canyon Diablo Meteorite]{The Canyon Diablo meteorite is one of the samples that was used by Clair Patterson in his attempt to determine the age of the Earth. The Canyon Diablo impactor struck Arizona roughly 50k years ago and left a crater that is roughly 1.2 km wide and 180 m deep.  }
+  \label{fig:patterson}
+  %\zsavepos{pos:textfig} 
+\end{marginfigure}
+
+
+Patterson's approach was based on a key idea from the nebular hypotesis: that our solar system formed from the collapse of an interstellar solar nebula---a giant cloud of gas a dust. From this hypothesis, several important assumptions follow: 
+
+\begin{quote}
+\begin{compactenum}
+  \item meteorites and eaerth formed at the same time, 
+  \item meteorites and earth have existed in an isolated and closed system (the solar system), and 
+  \item that Earth and meteorites contained uranium and lead of the same initial isotopic composition
+\end{compactenum}
+\end{quote}
+
+
+\noindent In other words, if the solar system originated from one geochemically homogeneous cloud, then meteorites preserve a record of its initial composition and provide a direct reference for dating the Earth.
+
+Patterson's work is the culmination of nearly 100 years of a scientific pursuit of the age of the Earth and underpins all of modern geology and biology. But do you know how the determination was made? Soon you will...
+
+
+
+
+\subsection*{The Task at Hand}
+
+
+In this lab, you will have the opportunity to explore the same Pb--Pb isotope 
+geochemistry that \citet{patterson1956age} used to determine the age of the Earth. 
+The key idea is that uranium (U) has two long-lived isotopes, 
+$^{238}\mathrm{U}$ and $^{235}\mathrm{U}$, which are unstable and 
+radioactively decay into lead (Pb) isotopes $^{206}\mathrm{Pb}$ and 
+$^{207}\mathrm{Pb}$, respectively.  
+
+Because the half-lives of $^{238}\mathrm{U}$ and $^{235}\mathrm{U}$ are 
+different, the relative abundances of $^{206}\mathrm{Pb}$ and $^{207}\mathrm{Pb}$ 
+can be compared to provide an absolute age. This dual decay system is powerful 
+because it allows cross-checking between two independent clocks, reducing 
+uncertainty and increasing confidence in the result.  
+
+In practice, we also make use of a third isotope: $^{204}\mathrm{Pb}$. Unlike 
+$^{206}\mathrm{Pb}$ and $^{207}\mathrm{Pb}$, the abundance of $^{204}\mathrm{Pb}$ 
+remains constant through time because no parent isotope decays into it. For this 
+reason, $^{204}\mathrm{Pb}$ serves as a stable reference. As $^{238}\mathrm{U}$ 
+and $^{235}\mathrm{U}$ decay, the ratios $^{206}\mathrm{Pb}/^{204}\mathrm{Pb}$ 
+and $^{207}\mathrm{Pb}/^{204}\mathrm{Pb}$ steadily increase.  
+
+By normalizing to $^{204}\mathrm{Pb}$, we account for any initial 
+$^{206}\mathrm{Pb}$ and $^{207}\mathrm{Pb}$ present in the sample. Thus, changes 
+in the ratios $^{206}\mathrm{Pb}/^{204}\mathrm{Pb}$ and 
+$^{207}\mathrm{Pb}/^{204}\mathrm{Pb}$ only reflect the accumulation of radiogenic 
+Pb over time, which depends on the half-lives of uranium isotopes and the initial 
+U concentration.  
+
+\begin{marginfigure}
+  \includegraphics[width = 3.5in]{canyon_diablo4.jpg}
+%  \checkparity This is an \pageparity\ page.%
+  \caption[Canyon Diablo Meteorite]{The Canyon Diablo meteorite is one of the samples that was used by Clair Patterson in his attempt to determine the age of the Earth. The Canyon Diablo impactor struck Arizona roughly 50k years ago and left a crater that is roughly 1.2 km wide and 180 m deep.  }
+  \label{fig:canyon_diablo}
+  %\zsavepos{pos:textfig}
+\end{marginfigure}
+
+If we plot $^{207}\mathrm{Pb}/^{204}\mathrm{Pb}$ against 
+$^{206}\mathrm{Pb}/^{204}\mathrm{Pb}$ for multiple samples that formed at the 
+same time but contained different amounts of initial U, the data fall along a single 
+line---an isochron. The slope of this line encodes the age of the 
+samples, independent of their initial U concentrations. This is the principle that 
+Patterson used to determine the age of the Earth.
+
+Since all matter in our solar system formed at approximately the same time, we 
+can take multiple samples of meteorites and measure the ratios of 
+$^{206}\mathrm{Pb}/^{204}\mathrm{Pb}$ and $^{207}\mathrm{Pb}/^{204}\mathrm{Pb}$. 
+Equation~\ref{eq:pbpb} is the Pb--Pb decay equation used to evaluate the age of 
+these meteorites. Although the equation may look complicated, we can simplify 
+its interpretation. The left-hand side of Equation~\ref{eq:pbpb} represents the 
+slope between samples when plotted on a $^{206}\mathrm{Pb}/^{204}\mathrm{Pb}$ vs. 
+$^{207}\mathrm{Pb}/^{204}\mathrm{Pb}$ plot. Because Patterson's 
+\citeyearpar{patterson1956age} dataset included five meteorite samples, we may 
+substitute the left-hand side of the equation with $m$, where $m$ is the slope 
+of the line in $^{206}\mathrm{Pb}/^{204}\mathrm{Pb}$ vs. 
+$^{207}\mathrm{Pb}/^{204}\mathrm{Pb}$ space. This substitution is shown in 
+Equation~\ref{eq:slope}.  
+
+
+\begin{equation}
+  \scalebox{1.5}{$
+    \frac{^{207}\mathrm{Pb}}{^{206}\mathrm{Pb}} =
+    \frac{\frac{^{207}\mathrm{Pb}}{^{204}\mathrm{Pb}} - \left(\frac{^{207}\mathrm{Pb}}{^{204}\mathrm{Pb}}\right)_0}
+         {\frac{^{206}\mathrm{Pb}}{^{204}\mathrm{Pb}} - \left(\frac{^{206}\mathrm{Pb}}{^{204}\mathrm{Pb}}\right)_0}
+    = \left(\frac{^{235}\mathrm{U}}{^{238}\mathrm{U}}\right)
+      \frac{e^{\lambda_{235} T} - 1}{e^{\lambda_{238} T} - 1}
+  $}
+  \label{eq:pbpb}
+\end{equation}
+
+\vspace*{.175in}
+\begin{equation}
+  \scalebox{1.5}{$
+    m = \frac{e^{\lambda_{235} T} - 1}{e^{\lambda_{238} T} - 1}
+  $}
+  \label{eq:slope}
+\end{equation}
+
+
+
+The ratio of $^{235}\mathrm{U}/^{238}\mathrm{U}$ is a constant in this equation, 
+meaning it is a known and fixed value. The decay constants for 
+$^{238}\mathrm{U}$ ($\lambda_{238}$) and $^{235}\mathrm{U}$ ($\lambda_{235}$) 
+are also known. These constants define the rate at which the isotopes decay, or 
+equivalently, their half-lives. The only unknown in Equation~\ref{eq:slope} is 
+age ($T$).  
+
+At first glance, Equation~\ref{eq:slope} has no direct solution, so we must 
+rearrange it and solve for one of the $T$ terms. This produces 
+Equation~\ref{eq:iter}, which, as you may notice, still contains two instances 
+of $T$. As a result, the equation must be solved iteratively.  
+
+\begin{equation}
+    \scalebox{1.5}{$
+      T = \frac{1}{\lambda_{235}} \ln\!\big(m\,(e^{\lambda_{238}T} - 1) + 1\big)
+    $}
+\label{eq:iter}
+\end{equation}
+
+To do this, we begin with an initial guess for the age ($T$). This guess allows 
+us to solve for the $T$ on the left-hand side of the equation. The resulting 
+value of $T$ from the first iteration is then used as the input $T$ for the next 
+iteration, and so on. After repeating this process many times, the solution for 
+$T$ converges to a steady value---meaning it no longer changes between 
+iterations. At that point, the equation is solved, and we have determined the 
+age of the meteorites.
+
+\subsection*{Part 1: The Warm-Up}
+\begin{compactenum}
+  \item What are the key assumptions of using an isochron to determine the age of a sample? (Google around!) Do you think these assumptions are reasonable for meteorites? Why or why not?
+  \item Why do we normalize daughter and parent to a stable isotope (e.g.,$ ^{204}\mathrm{Pb}$)? Hint: Read about Clair Patterson's work on leaded gasoline. \href{}{Here is a link to an interview with him about that covers it.}
+  \item Assuming the samples are cogenetic and closed, how does the slope of the isochron change with increasing formation time? (Increase / decrease / no change). Why? Can you make a graph showing this trend? 
+\end{compactenum}
+
+\subsection*{Part 1.5: Some Python Code}
+Please look through the step-by-step example I give of how to write the code for estimating the age of the earth using the isochron method. \href{https://github.com/boltonhowes22/EarthHistory/blob/main/ClassBook/code/isochron_demo.ipynb}{Click here for an isochron demo}.
+
+\subsection*{Part 2: Pb-Pb Isochron Age of the Earth}
+\begin{compactenum}
+  \item Read Clair Patterson’s \href{https://github.com/boltonhowes22/EarthHistory/blob/main/readings/Patterson_1956.pdf}{\emph{Age of Meteorites and the Earth}}.
+  \item Do the samples used by Clair Patterson meet the key assumptions for isochron you outlined above? 
+  \item Adapt the sample code I gave you, enter the data from the paper. What is the age of the Earth? 
+
+  \item As you read above, you have to make an initial assumption for $T$. What did you choose? Why? Is the final value sensitive to the initial choice?
+
+\end{compactenum}
+
+
+\subsection*{Part 3: Rb-Sr Age of the Moon}
+\begin{compactenum}
+  \item Read \citet{carlson2014rb}: \href{https://github.com/boltonhowes22/EarthHistory/blob/main/readings/Carlson_2014.pdf}{\emph{Constraining the ages of the Moon's Mg-suite rocks}}.
+  \item Using the 77215 \textbf{internal mineral set} (whole rock LLNL, plagioclase, pyroxene) from Table~2, build an Rb--Sr isochron with
+        $x=\!{}^{87}\mathrm{Rb}/{}^{86}\mathrm{Sr}$ and $y=\!{}^{87}\mathrm{Sr}/{}^{86}\mathrm{Sr}$. (Just like in the example I gave you).
+  \item Convert the slope to age.
+  \item Please make a graph of the isochron.
+  \item Briefly justify the isochron assumptions for this mineral set.
+  \item What is the Rb-Sr age of the moon? 
+\end{compactenum}
+
+\vspace*{.5in}
+
+So, we have not been considering uncertainties (which is a \textbf{very important} part of geochronology), but please take a moment to find the uncertainty for the Rb-Sr age of the moon in \citet{carlson2014rb}. 
+
+What are the uncertainties reported? Now move to \citet{barboni2017early}. There is a discussion of the size of these Rb-Sr uncertainties and how they cannot distinguish between the major hypotheses for lunar formation.
+
+\subsection*{Part 4: The U-Pb age of the moon}
+\begin{compactenum}
+  \item Read \citet{barboni2017early}: \href{https://github.com/boltonhowes22/EarthHistory/blob/main/readings/Barboni_2017.pdf}{\emph{Early formation of the Moon 4.51 billion years ago}}. What geological event(s) are the ziron measurements meant to constrain on the Moon? What does this add to the \citet{carlson2014rb} paper? 
+  \item I have included a concordia diagram. 
+  \begin{compactenum}
+    \item Please describe what the solid line is in the diagram and what it means for the ellipses to plot on the line versus off of the line.
+    \item So, what do you think? Are the dates from these zircon measurements reliable?
+  \end{compactenum}
+  \item Now look at the diagram of ages of the zircons and consult the paper. When did the moon form? 
+  \item So when did the moon form? 
+  \item Why does it matter when the moon formed? 
+
+\end{compactenum}
+
+
+% ---- Bibliography (pre-built .bbl) ----
+\begingroup
+  \renewcommand{\section}[2]{}% suppress a "References" section header if the .bbl adds one
+  \input{bibliography.bbl}
+\endgroup
+
+\end{document}
