@@ -9,6 +9,12 @@
 \usepackage{natbib}
 \usepackage{paralist} % for compactenum
 
+% --- Make section headings bold + sans-serif (including starred sections) ---
+\usepackage{titlesec}
+\titleformat*{\section}{\sffamily\bfseries\Large}
+\titleformat*{\subsection}{\sffamily\bfseries\large}
+\titleformat*{\subsubsection}{\sffamily\bfseries\normalsize}
+
 \graphicspath{{./}{./graphics/}}
 
 % Sensible default for images (you can delete/adjust)
@@ -38,9 +44,9 @@ It is perhaps a little indelicate to ask of our Mother Earth her age, but Scienc
 Despite the discovery of radioactivity in the early 20th century  and immediate effort to date Earth materials using radioactive decay, it took more than 50 years until isotope geochemists were able to produce an age for Earth that was close to what we use today. \citet{patterson1956age} is commonly cited as the first correct determination of the age of the earth.
 
 \begin{marginfigure}
-  \includegraphics[width = 3.5in]{clair_patterson.png}
+  \includegraphics[width = 2.5in]{clair_patterson.png}
 %  \checkparity This is an \pageparity\ page.%
-  \caption[Canyon Diablo Meteorite]{The Canyon Diablo meteorite is one of the samples that was used by Clair Patterson in his attempt to determine the age of the Earth. The Canyon Diablo impactor struck Arizona roughly 50k years ago and left a crater that is roughly 1.2 km wide and 180 m deep.  }
+  \caption[Canyon Diablo Meteorite]{Clair Patterson (1922--1995) was an American geochemist known for determining the age of the Earth using Pb--Pb isotope geochemistry of meteorites and for advocating for the removal of lead from gasoline.  }
   \label{fig:patterson}
   %\zsavepos{pos:textfig} 
 \end{marginfigure}
@@ -96,7 +102,7 @@ Pb over time, which depends on the half-lives of uranium isotopes and the initia
 U concentration.  
 
 \begin{marginfigure}
-  \includegraphics[width = 3.5in]{canyon_diablo4.jpg}
+  \includegraphics[width = 2.5in]{canyon_diablo4.jpg}
 %  \checkparity This is an \pageparity\ page.%
   \caption[Canyon Diablo Meteorite]{The Canyon Diablo meteorite is one of the samples that was used by Clair Patterson in his attempt to determine the age of the Earth. The Canyon Diablo impactor struck Arizona roughly 50k years ago and left a crater that is roughly 1.2 km wide and 180 m deep.  }
   \label{fig:canyon_diablo}
@@ -176,21 +182,21 @@ age of the meteorites.
 
 \subsection*{Pre-Lab}
 
-The pre-lab assignment is to get VSCode, Python, and Jupyter notebooks set up on your computer. Please follow the instructions here: \href{Python Install Guide}{https://github.com/boltonhowes22/EarthHistory/blob/main/Guides/python_install.pdf}. 
+The pre-lab assignment is to get VSCode, Python, and Jupyter notebooks set up on your computer. Please follow the instructions here: \href{https://github.com/boltonhowes22/EarthHistory/blob/main/Guides/python_install.pdf}{Python Install Guide}. 
 
-Then try download and run the this notebook. \href{}{}
+\vspace*{.175in}
 
-\subsection*{Part 1: The Warm-Up}
+\noindent Then try download and run the this notebook: \href{https://github.com/boltonhowes22/EarthHistory/blob/main/Problem_Sets/PSET01_ageofearth/isochron_demo.ipynb}{Isochron Demo} \sidenote{please let me know if you have any issues getting this to run!}.
+
+\subsection*{Pre-Lab Part 2: The Warm-Up}
 \begin{compactenum}
   \item What are the key assumptions of using an isochron to determine the age of a sample? (Google around!) Do you think these assumptions are reasonable for meteorites? Why or why not?
   \item Why do we normalize daughter and parent to a stable isotope (e.g.,$ ^{204}\mathrm{Pb}$)? Hint: Read about Clair Patterson's work on leaded gasoline. 
   \item Assuming the samples are cogenetic and closed, how does the slope of the isochron change with increasing formation time? (Increase / decrease / no change). Why? Can you make a graph showing this trend? 
 \end{compactenum}
 
-\subsection*{Part 1.5: Some Python Code}
-Please look through the step-by-step example I give of how to write the code for estimating the age of the earth using the isochron method. \href{https://github.com/boltonhowes22/EarthHistory/blob/main/ClassBook/code/isochron_demo.ipynb}{Click here for an isochron demo}.
-
-\subsection*{Part 2: Pb-Pb Isochron Age of the Earth}
+\section*{The Lab}
+\subsection*{Part 1: Pb-Pb Isochron Age of the Earth}
 \begin{compactenum}
   \item Read Clair Patterson’s \href{https://github.com/boltonhowes22/EarthHistory/blob/main/readings/Patterson_1956.pdf}{\emph{Age of Meteorites and the Earth}}.
   \item Do the samples used by Clair Patterson meet the key assumptions for isochron you outlined above? 
@@ -201,7 +207,7 @@ Please look through the step-by-step example I give of how to write the code for
 \end{compactenum}
 
 
-\subsection*{Part 3: Rb-Sr Age of the Moon}
+\subsection*{Part 2: Rb-Sr Age of the Moon}
 \begin{compactenum}
   \item Read \citet{carlson2014rb}: \href{https://github.com/boltonhowes22/EarthHistory/blob/main/readings/Carlson_2014.pdf}{\emph{Constraining the ages of the Moon's Mg-suite rocks}}.
   \item Using the 77215 \textbf{internal mineral set} (whole rock LLNL, plagioclase, pyroxene) from Table~2, build an Rb--Sr isochron with
@@ -218,7 +224,7 @@ So, we have not been considering uncertainties (which is a \textbf{very importan
 
 What are the uncertainties reported? Now move to \citet{barboni2017early}. There is a discussion of the size of these Rb-Sr uncertainties and how they cannot distinguish between the major hypotheses for lunar formation.
 
-\subsection*{Part 4: The U-Pb age of the moon}
+\subsection*{Part 3: The U-Pb age of Moon (not an isochron)}
 \begin{compactenum}
   \item Read \citet{barboni2017early}: \href{https://github.com/boltonhowes22/EarthHistory/blob/main/readings/Barboni_2017.pdf}{\emph{Early formation of the Moon 4.51 billion years ago}}. What geological event(s) are the ziron measurements meant to constrain on the Moon? What does this add to the \citet{carlson2014rb} paper? 
   \item I have included a concordia diagram. 
