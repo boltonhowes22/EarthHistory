@@ -1,6 +1,6 @@
-PWD c:\Users\bolto\Documents\EarthHistory
+PWD c:\Users\bolto\Documents\EarthHistory\Guides
 INPUT C:\Users\bolto\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\bolto\Documents\EarthHistory\python_install.tex
+INPUT c:\Users\bolto\Documents\EarthHistory\Guides\python_install.tex
 OUTPUT python_install.log
 INPUT C:\Users\bolto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\bolto\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
