@@ -22,7 +22,6 @@
 
 \begin{document}
 \maketitle
-\section{The Age of the Earth and Moon}
 \label{ch:age_of_earth}
 
 \begin{quote}
@@ -36,7 +35,7 @@ It is perhaps a little indelicate to ask of our Mother Earth her age, but Scienc
 
 
 
-Despite the discovery of radioactivity in the early 2s0th century [citation] and immediate effort to date Earth materials using radioactive decay [cite], it took more than 50 years until isotope geochemists were able to produce an age for Earth that was close to what we use today. \citet{patterson1956age} is commonly cited as the first correct determination of the age of the earth.
+Despite the discovery of radioactivity in the early 20th century  and immediate effort to date Earth materials using radioactive decay, it took more than 50 years until isotope geochemists were able to produce an age for Earth that was close to what we use today. \citet{patterson1956age} is commonly cited as the first correct determination of the age of the earth.
 
 \begin{marginfigure}
   \includegraphics[width = 3.5in]{clair_patterson.png}
@@ -47,11 +46,11 @@ Despite the discovery of radioactivity in the early 2s0th century [citation] and
 \end{marginfigure}
 
 
-Patterson's approach was based on a key idea from the nebular hypotesis: that our solar system formed from the collapse of an interstellar solar nebula---a giant cloud of gas a dust. From this hypothesis, several important assumptions follow: 
+Patterson's approach was based on a key idea from the \textit{Nebular Hypothesis}: that our solar system formed from the collapse of an interstellar solar nebula---a giant cloud of gas a dust. From this hypothesis, several important assumptions follow: 
 
 \begin{quote}
 \begin{compactenum}
-  \item meteorites and eaerth formed at the same time, 
+  \item meteorites and earth formed at essentially the same time from the solar nebula, 
   \item meteorites and earth have existed in an isolated and closed system (the solar system), and 
   \item that Earth and meteorites contained uranium and lead of the same initial isotopic composition
 \end{compactenum}
@@ -61,6 +60,7 @@ Patterson's approach was based on a key idea from the nebular hypotesis: that ou
 \noindent In other words, if the solar system originated from one geochemically homogeneous cloud, then meteorites preserve a record of its initial composition and provide a direct reference for dating the Earth.
 
 Patterson's work is the culmination of nearly 100 years of a scientific pursuit of the age of the Earth and underpins all of modern geology and biology. But do you know how the determination was made? Soon you will...
+
 
 
 
@@ -173,10 +173,17 @@ $T$ converges to a steady value---meaning it no longer changes between
 iterations. At that point, the equation is solved, and we have determined the 
 age of the meteorites.
 
+
+\subsection*{Pre-Lab}
+
+The pre-lab assignment is to get VSCode, Python, and Jupyter notebooks set up on your computer. Please follow the instructions here: \href{Python Install Guide}{https://github.com/boltonhowes22/EarthHistory/blob/main/Guides/python_install.pdf}. 
+
+Then try download and run the this notebook. \href{}{}
+
 \subsection*{Part 1: The Warm-Up}
 \begin{compactenum}
   \item What are the key assumptions of using an isochron to determine the age of a sample? (Google around!) Do you think these assumptions are reasonable for meteorites? Why or why not?
-  \item Why do we normalize daughter and parent to a stable isotope (e.g.,$ ^{204}\mathrm{Pb}$)? Hint: Read about Clair Patterson's work on leaded gasoline. \href{}{Here is a link to an interview with him about that covers it.}
+  \item Why do we normalize daughter and parent to a stable isotope (e.g.,$ ^{204}\mathrm{Pb}$)? Hint: Read about Clair Patterson's work on leaded gasoline. 
   \item Assuming the samples are cogenetic and closed, how does the slope of the isochron change with increasing formation time? (Increase / decrease / no change). Why? Can you make a graph showing this trend? 
 \end{compactenum}
 
@@ -226,10 +233,7 @@ What are the uncertainties reported? Now move to \citet{barboni2017early}. There
 \end{compactenum}
 
 
-% ---- Bibliography (pre-built .bbl) ----
-\begingroup
-  \renewcommand{\section}[2]{}% suppress a "References" section header if the .bbl adds one
-  \input{bibliography.bbl}
-\endgroup
+\bibliographystyle{plainnat}
+\bibliography{bibliography}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  8 JAN 2026 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  12 JAN 2026 19:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,56 +618,59 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
-Package natbib Warning: Citation `patterson1956age' on page 1 undefined on input line 39.
+Package natbib Warning: Citation `patterson1956age' on page 1 undefined on input line 38.
 
 <./graphics/clair_patterson.png, id=3, 642.4pt x 823.075pt>
 File: ./graphics/clair_patterson.png Graphic file (type png)
 <use ./graphics/clair_patterson.png>
-Package pdftex.def Info: ./graphics/clair_patterson.png  used on input line 42.
+Package pdftex.def Info: ./graphics/clair_patterson.png  used on input line 41.
 (pdftex.def)             Requested size: 252.94633pt x 324.0875pt.
 
-Overfull \hbox (108.94633pt too wide) in paragraph at lines 42--44
+Overfull \hbox (108.94633pt too wide) in paragraph at lines 41--43
 []  
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 47.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 46.
 (C:\Users\bolto\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 47.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 46.
  (C:\Users\bolto\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 47.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 46.
  (C:\Users\bolto\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 47.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 46.
  (C:\Users\bolto\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 47.
+(Font)              <10> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.6> on input line 47.
+(Font)              <7.6> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 47.
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 47.
+(Font)              <6> on input line 46.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 46.
  (C:\Users\bolto\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 47.
+(Font)              scaled to size 10.42007pt on input line 46.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 47.
+(Font)              scaled to size 7.91925pt on input line 46.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 47.
+(Font)              scaled to size 6.25204pt on input line 46.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 47.
+(Font)              scaled to size 10.42007pt on input line 46.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 47.
+(Font)              scaled to size 7.91925pt on input line 46.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 47.
+(Font)              scaled to size 6.25204pt on input line 46.
+
+
+LaTeX Warning: Marginpar on page 1 moved.
 
 
 Package natbib Warning: Citation `patterson1956age' on page 1 undefined on input line 72.
@@ -682,7 +685,7 @@ Overfull \hbox (24.64964pt too wide) in paragraph at lines 84--90
 [1
 
 {C:/Users/bolto/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc} <./graphics/clair_patterson.png>]
-<./graphics/canyon_diablo4.jpg, id=23, 289.08pt x 192.72pt>
+<./graphics/canyon_diablo4.jpg, id=22, 289.08pt x 192.72pt>
 File: ./graphics/canyon_diablo4.jpg Graphic file (type jpg)
 <use ./graphics/canyon_diablo4.jpg>
 Package pdftex.def Info: ./graphics/canyon_diablo4.jpg  used on input line 99.
@@ -691,6 +694,9 @@ Package pdftex.def Info: ./graphics/canyon_diablo4.jpg  used on input line 99.
 Overfull \hbox (108.94437pt too wide) in paragraph at lines 99--101
 []  
  []
+
+
+LaTeX Warning: Marginpar on page 2 moved.
 
 
 LaTeX Warning: Reference `eq:pbpb' on page 2 undefined on input line 116.
@@ -716,53 +722,102 @@ LaTeX Warning: Reference `eq:iter' on page 2 undefined on input line 158.
 
 
 [2{C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}{C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc} <./graphics/canyon_diablo4.jpg>]
+c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex:179: Missing $ inserted.
+<inserted text> 
+                $
+l.179 ...tory/blob/main/Guides/python_install.pdf}
+                                                  .
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package hyperref Warning: Suppressing link with empty target on input line 179.
+c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex:179: Missing $ inserted.
+<inserted text> 
+                $
+l.179 ...tory/blob/main/Guides/python_install.pdf}
+                                                  .
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (1.0278pt too wide) in paragraph at lines 184--185
-\T1/lmr/m/n/10 the code for es-ti-mat-ing the age of the earth us-ing the isochron method. 
+Overfull \hbox (73.61311pt too wide) in paragraph at lines 179--180
+[]\T1/lmr/m/n/10 https://github.com/boltonhowes22/EarthHistory/blob/main/Guides/python$[]\OML/lmm/m/it/10 nstall\OT1/lmr/m/n/10 .\OML/lmm/m/it/10 pdf$[]\T1/lmr/m/n/10 .  
  []
 
 
-Package natbib Warning: Citation `carlson2014rb' on page 3 undefined on input line 199.
+Package hyperref Warning: Suppressing empty link on input line 181.
+
+
+Overfull \hbox (1.0278pt too wide) in paragraph at lines 191--192
+\T1/lmr/m/n/10 the code for es-ti-mat-ing the age of the earth us-ing the isochron method. 
+ []
 
 
 
 [3]
 
-Package natbib Warning: Citation `carlson2014rb' on page 4 undefined on input line 210.
+Package natbib Warning: Citation `carlson2014rb' on page 4 undefined on input line 206.
 
 
-Package natbib Warning: Citation `barboni2017early' on page 4 undefined on input line 212.
+Package natbib Warning: Citation `carlson2014rb' on page 4 undefined on input line 217.
 
 
-Package natbib Warning: Citation `barboni2017early' on page 4 undefined on input line 216.
+Package natbib Warning: Citation `barboni2017early' on page 4 undefined on input line 219.
 
 
-Package natbib Warning: Citation `carlson2014rb' on page 4 undefined on input line 216.
+Package natbib Warning: Citation `barboni2017early' on page 4 undefined on input line 223.
 
 
-! LaTeX Error: File `bibliography.bbl' not found.
+Package natbib Warning: Citation `carlson2014rb' on page 4 undefined on input line 223.
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: bbl)
+(age_of_earth_and_moon.bbl
 
-Enter file name: 
-c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex:232: Emergency stop.
-<read *> 
-         
-l.232   \input{bibliography.bbl}
-                                ^^M
-*** (cannot \read from terminal in nonstop modes)
+[4])
 
- 
+Package natbib Warning: There were undefined citations.
+
+
+
+[5] (age_of_earth_and_moon.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `age_of_earth_and_moon.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `age_of_earth_and_moon.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
 Here is how much of TeX's memory you used:
- 14085 strings out of 473682
- 222928 string characters out of 5719215
- 647208 words of memory out of 5000000
- 36862 multiletter control sequences out of 15000+600000
+ 14123 strings out of 473682
+ 223713 string characters out of 5719215
+ 647904 words of memory out of 5000000
+ 36879 multiletter control sequences out of 15000+600000
  629722 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 97i,11n,97p,509b,543s stack positions out of 10000i,1000n,20000p,200000b,200000s
-c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex:232:  ==> Fatal error occurred, no output PDF file produced!
+ 97i,12n,97p,491b,562s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on age_of_earth_and_moon.pdf (5 pages, 947288 bytes).
+PDF statistics:
+ 162 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
+ 2059 words of extra memory for PDF output out of 10000 (max. 10000000)
+

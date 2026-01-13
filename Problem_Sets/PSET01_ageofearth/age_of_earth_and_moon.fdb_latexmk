@@ -1,17 +1,13 @@
 # Fdb version 4
 ["bibtex age_of_earth_and_moon"] 0 "age_of_earth_and_moon.aux" "age_of_earth_and_moon.bbl" "age_of_earth_and_moon" 0 -1
-  "age_of_earth_and_moon.aux" 1767895791 1069 b740f54c5c6972e3e04ab0517b2c2c56 "pdflatex"
+  "./bibliography.bib" 1762189226 1120 d28a896686fbd56dfa096cb1fd7f7a13 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
+  "age_of_earth_and_moon.aux" 1768266187 1243 ce7d0676223408c1fb9cb74d160e6d8d "pdflatex"
   (generated)
   "age_of_earth_and_moon.bbl"
   "age_of_earth_and_moon.blg"
   (rewritten before read)
-["bibtex bibliography"] 0 "bibliography.aux" "bibliography.bbl" "bibliography" 0 -1
-  "bibliography.aux" 0 -1 0 ""
-  (generated)
-  "bibliography.bbl"
-  "bibliography.blg"
-  (rewritten before read)
-["pdflatex"] 1767895791.27038 "c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex" "age_of_earth_and_moon.pdf" "age_of_earth_and_moon" 1767895792.11275 2
+["pdflatex"] 1768266185.90287 "c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex" "age_of_earth_and_moon.pdf" "age_of_earth_and_moon" 1768266188.23386 2
   "C:/Users/bolto/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764605878 83486 9208647d054da4672a050e7ed94c9aa5 ""
   "C:/Users/bolto/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1732309881 11986914 673299611337f1431354d98140ac021f ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -45,6 +41,22 @@
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/rm-lmr8.tfm" 1256929440 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/fplmr.tfm" 1136801054 1032 7fa31d93ecd4cbdfac02c7a1ebc6facc ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/tfm/public/mathpazo/zplmr7t.tfm" 1136801054 1828 bb8add3bd19426549f9267c88b0cb8bd ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb" 1256929440 121021 836464b5fe0c782d94085eb083550ccc ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb" 1256929440 116427 4909e80035dae5d5a4ec2b5ddd9649dd ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb" 1256929440 23055 2e5b42921de910eaa97b85df04ca4891 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb" 1256929440 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb" 1256929440 31113 04b711c9a4c7f8cb4ed784c6fc4cc1c5 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb" 1256929440 30635 833ec815d446ec453a4913fc26d24cbc ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb" 1256929440 119235 05e5c8d6d60439433e50047898c2c0e0 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb" 1256929440 123394 992f5e87d698d9e94717394c62580ea6 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb" 1256929440 122174 a2d5e73f396ddbeb3bdf5c79aea0993d ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb" 1256929440 121065 ba8daf2228d9e511988917831f1e22e9 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb" 1256929440 112593 fda2373ba4420af33949610de4c28fe8 ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb" 1256929440 109265 e6c7d377db6dfccd4a123fb26da8cffb ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb" 1256929440 27863 09ce3735688ffde955e72da27c95b61a ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb" 1256929440 27802 5c876bb2c4040caaf035d60bd74a86bd ""
+  "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb" 1136882148 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/vf/public/mathpazo/zplmr7t.vf" 1136801054 1532 0ba0b316cfeb3df86c9701756c9a4b71 ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -147,11 +159,11 @@
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/latex/xifthen/xifthen.sty" 1448274436 5689 1bfa68243e89a54479e7d0580773c57e ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "age_of_earth_and_moon.aux" 1767895791 1069 b740f54c5c6972e3e04ab0517b2c2c56 "pdflatex"
-  "age_of_earth_and_moon.bbl" 1767895761 0 d41d8cd98f00b204e9800998ecf8427e "bibtex age_of_earth_and_moon"
-  "age_of_earth_and_moon.tex" 1767895789 12325 ef4c647209661af6d4e6c2f44808ecc6 ""
-  "bibliography.bbl" 0 -1 0 "bibtex bibliography"
-  "c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex" 1767895789 12325 ef4c647209661af6d4e6c2f44808ecc6 ""
+  "age_of_earth_and_moon.aux" 1768266187 1243 ce7d0676223408c1fb9cb74d160e6d8d "pdflatex"
+  "age_of_earth_and_moon.bbl" 1768265061 1337 fa1f4640ab4ff788a9e76a233a48aa0d "bibtex age_of_earth_and_moon"
+  "age_of_earth_and_moon.out" 1768266186 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "age_of_earth_and_moon.tex" 1768266181 12442 ec626b10929868aa5f1fee5356bda4ee ""
+  "c:/Users/bolto/Documents/EarthHistory/Problem_Sets/PSET01_ageofearth/age_of_earth_and_moon.tex" 1768266181 12442 ec626b10929868aa5f1fee5356bda4ee ""
   "graphics/canyon_diablo4.jpg" 1756823336 209934 512b8cac6cd4a033d1f9cb76faed7e5e ""
   "graphics/clair_patterson.png" 1756823984 467191 921a80c27e939a8af9b5068e533e1b0e ""
   (generated)

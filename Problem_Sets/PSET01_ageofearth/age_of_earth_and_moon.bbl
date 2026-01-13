@@ -1,0 +1,29 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Barboni et~al.(2017)Barboni, Boehnke, Keller, Kohl, Schoene, Young,
+  and McKeegan]{barboni2017early}
+Melanie Barboni, Patrick Boehnke, Brenhin Keller, Issaku~E Kohl, Blair Schoene,
+  Edward~D Young, and Kevin~D McKeegan.
+\newblock Early formation of the moon 4.51 billion years ago.
+\newblock \emph{Science advances}, 3\penalty0 (1):\penalty0 e1602365, 2017.
+
+\bibitem[Carlson et~al.(2014)Carlson, Borg, Gaffney, and Boyet]{carlson2014rb}
+Richard~W Carlson, Lars~E Borg, Amy~M Gaffney, and Maud Boyet.
+\newblock Rb-sr, sm-nd and lu-hf isotope systematics of the lunar mg-suite: the
+  age of the lunar crust and its relation to the time of moon formation.
+\newblock \emph{Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences}, 372\penalty0
+  (2024):\penalty0 20130246, 2014.
+
+\bibitem[Patterson(1956)]{patterson1956age}
+Claire Patterson.
+\newblock Age of meteorites and the earth.
+\newblock \emph{Geochimica et Cosmochimica Acta}, 10\penalty0 (4):\penalty0
+  230--237, 1956.
+
+\end{thebibliography}
