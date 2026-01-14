@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768418176.20046 "c:/Users/bolto/Documents/EarthHistory/Syllabus/syllabus.tex" "syllabus.pdf" "syllabus" 1768418176.98343 0
+["pdflatex"] 1768419244.15576 "c:/Users/bolto/Documents/EarthHistory/Syllabus/syllabus.tex" "syllabus.pdf" "syllabus" 1768419244.89758 0
   "C:/Users/bolto/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768268441 83486 9208647d054da4672a050e7ed94c9aa5 ""
   "C:/Users/bolto/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1764022703 12668 25b297014a7391c3be9c6364be6d6ce7 ""
   "C:/Users/bolto/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1732309881 11986914 673299611337f1431354d98140ac021f ""
@@ -107,10 +107,10 @@
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1730400552 14552 27664839421e418b87f56fa4c6f66b1a ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1730400552 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "C:/Users/bolto/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/bolto/Documents/EarthHistory/Syllabus/syllabus.tex" 1768418175 20718 ec79ea7f09ccb59c04916dda1b38eed6 ""
-  "syllabus.aux" 1768418176 300 9fe768eb1aa43f15f3e28dd82f870ffd "pdflatex"
-  "syllabus.out" 1768418176 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "syllabus.tex" 1768418175 20718 ec79ea7f09ccb59c04916dda1b38eed6 ""
+  "c:/Users/bolto/Documents/EarthHistory/Syllabus/syllabus.tex" 1768419243 20759 7692a2b5608ed65354ee25207e1d705c ""
+  "syllabus.aux" 1768419244 300 9fe768eb1aa43f15f3e28dd82f870ffd "pdflatex"
+  "syllabus.out" 1768419244 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "syllabus.tex" 1768419243 20759 7692a2b5608ed65354ee25207e1d705c ""
   (generated)
   "syllabus.aux"
   "syllabus.log"

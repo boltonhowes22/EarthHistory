@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  14 JAN 2026 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  14 JAN 2026 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -515,13 +515,13 @@ Package rerunfilecheck Info: File `syllabus.out' has not changed.
 Here is how much of TeX's memory you used:
  13340 strings out of 473682
  209137 string characters out of 5719215
- 655936 words of memory out of 5000000
+ 655972 words of memory out of 5000000
  36092 multiletter control sequences out of 15000+600000
  575453 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,6n,79p,1244b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\bolto\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on syllabus.pdf (9 pages, 114674 bytes).
+Output written on syllabus.pdf (9 pages, 114698 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
