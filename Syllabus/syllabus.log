@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  12 JAN 2026 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.22)  14 JAN 2026 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -488,17 +488,17 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 [6]
 
 [7]
-Overfull \hbox (6.7715pt too wide) in paragraph at lines 304--304
+Overfull \hbox (6.7715pt too wide) in paragraph at lines 311--311
 []|\OT1/cmr/bx/n/10.95 (-20) Week| 
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 403--403
+Underfull \hbox (badness 1735) in paragraph at lines 410--410
 []|\OT1/cmr/m/n/10.95 (+20) Flex Week / Buffer
  []
 
 
-Overfull \hbox (27.79857pt too wide) in alignment at lines 302--416
+Overfull \hbox (27.79857pt too wide) in alignment at lines 309--423
  [] [] [] [] 
  []
 
@@ -521,7 +521,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  69i,6n,79p,1244b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\bolto\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/bolto/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on syllabus.pdf (9 pages, 114374 bytes).
+Output written on syllabus.pdf (9 pages, 114674 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
